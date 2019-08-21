@@ -7,7 +7,6 @@ phases:
   build:
     commands:
       - java -version
-      - mvn package
   pre_build:
     commands:
     - echo "Entered the pre-build phase"
