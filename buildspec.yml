@@ -1,6 +1,6 @@
 # This file controls the AWS CodeBuild
 
-version: default
+version: 18.0
 phases:
   pre_build:
     commands:
