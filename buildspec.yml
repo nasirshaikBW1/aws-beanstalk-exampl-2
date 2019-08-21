@@ -1,6 +1,13 @@
 # This file controls the AWS CodeBuild
 version: 0.2
 phases:
+  install:
+    runtime-versions:
+      java: openjdk8
+  build:
+    commands:
+      - java -version
+      - mvn package
   pre_build:
     commands:
     - echo "Entered the pre-build phase"
